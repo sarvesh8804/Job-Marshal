@@ -16,6 +16,7 @@ import {
 import { auth } from "@/app/utils/auth";
 import { ThemeToggle } from "./ThemeToggle";
 import { UserDropdown } from "./UserDropdown";
+import { NAV_LINKS } from "@/app/constants";
 
 export async function Navbar() {
   const session = await auth();
@@ -31,6 +32,17 @@ export async function Navbar() {
 
       {/* Desktop Navigation */}
       <div className="hidden md:flex items-center gap-5">
+      {/* <div className="hidden lg:flex items-center gap-4"> */}
+                        <ul className="flex items-center gap-8">
+                            {NAV_LINKS.map((link, index) => (
+                                <li key={index} className="text-sm font-medium -1 link">
+                                    <Link href={link.href}>
+                                        {link.name}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    {/* </div> */}
         <ThemeToggle />
         <Link href="/post-job" className={buttonVariants({ size: "lg" })}>
           Post Job

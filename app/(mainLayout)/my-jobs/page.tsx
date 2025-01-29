@@ -1,5 +1,5 @@
 import React from "react";
-
+import { SendBirdProvider } from "@sendbird/uikit-react";
 import {
   Card,
   CardContent,
