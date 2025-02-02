@@ -91,10 +91,10 @@ const PostJobPage = async () => {
         <Card className="lg:sticky lg:top-4">
           <CardHeader>
             <CardTitle className="text-xl">
-              Trusted by Industry Leaders
+              Trusted by Workers and Employers
             </CardTitle>
             <CardDescription>
-              Join thousands of companies hiring top talent
+              Join thousands of companies hiring on daily basis
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-6">

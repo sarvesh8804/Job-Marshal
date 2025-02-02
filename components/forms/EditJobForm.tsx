@@ -136,10 +136,10 @@ export function EditJobForm({ jobPost }: iAppProps) {
                       <SelectContent>
                         <SelectGroup>
                           <SelectLabel>Employment Type</SelectLabel>
-                          <SelectItem value="full-time">Full Time</SelectItem>
+                          <SelectItem value="Daily Wage">Daily Wage</SelectItem>
                           <SelectItem value="part-time">Part Time</SelectItem>
-                          <SelectItem value="contract">Contract</SelectItem>
-                          <SelectItem value="internship">Internship</SelectItem>
+                          <SelectItem value="contract">Seasonal</SelectItem>
+                          <SelectItem value="internship">Mass Bidding</SelectItem>
                         </SelectGroup>
                       </SelectContent>
                     </Select>
@@ -192,12 +192,12 @@ export function EditJobForm({ jobPost }: iAppProps) {
               />
 
               <FormItem>
-                <FormLabel>Salary Range</FormLabel>
+                <FormLabel>Salary Range ( Market Avg. $2100 )</FormLabel>
                 <FormControl>
                   <SalaryRangeSelector
                     control={form.control}
-                    minSalary={30000}
-                    maxSalary={1000000}
+                    minSalary={100}
+                    maxSalary={10000}
                   />
                 </FormControl>
                 <FormMessage>

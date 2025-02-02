@@ -1,18 +1,18 @@
 export const NAV_LINKS = [
     {
         name: "Find New Jobs",
-        href: "/"
+        href: "/dashboard"
     },
     {
         name: "Hire Workers",
         href: "/"
     },
     {
-        name: "NGO Connect",
+        name: "NGO Connect & Claims",
         href: "/ngo"
     },
     {
-        name: "Locations",
+        name: "How To Reach",
         href: "/maps"
     },
 ];

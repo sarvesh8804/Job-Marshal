@@ -129,10 +129,10 @@ export function CreateJobForm({
                       <SelectContent>
                         <SelectGroup>
                           <SelectLabel>Employment Type</SelectLabel>
-                          <SelectItem value="full-time">Full Time</SelectItem>
-                          <SelectItem value="part-time">Part Time</SelectItem>
-                          <SelectItem value="contract">Contract</SelectItem>
-                          <SelectItem value="internship">Internship</SelectItem>
+                          <SelectItem value="full-time">Daily Wage</SelectItem>
+                          <SelectItem value="part-time">Short Term Project</SelectItem>
+                          <SelectItem value="contract">Seasonal</SelectItem>
+                          <SelectItem value="internship">Mass Bidding</SelectItem>
                         </SelectGroup>
                       </SelectContent>
                     </Select>
@@ -161,7 +161,7 @@ export function CreateJobForm({
                       </FormControl>
                       <SelectContent>
                         <SelectGroup>
-                          <SelectLabel>Worldwide</SelectLabel>
+                          <SelectLabel></SelectLabel>
                           <SelectItem value="worldwide">
                             <span>🌍</span>
                             <span className="pl-2">Worldwide / Remote</span>
@@ -185,12 +185,12 @@ export function CreateJobForm({
               />
 
               <FormItem>
-                <FormLabel>Salary Range</FormLabel>
+                <FormLabel>Salary Range  ( Market Avg. Rs 2100 )</FormLabel>
                 <FormControl>
                   <SalaryRangeSelector
                     control={form.control}
-                    minSalary={30000}
-                    maxSalary={1000000}
+                    minSalary={100}
+                    maxSalary={10000}
                   />
                 </FormControl>
                 <FormMessage>

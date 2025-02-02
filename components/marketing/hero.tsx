@@ -47,17 +47,17 @@ const Hero = () => {
                                 <span className="spark mask-gradient absolute inset-0 h-[100%] w-[100%] animate-flip overflow-hidden rounded-full [mask:linear-gradient(white,_transparent_50%)] before:absolute before:aspect-square before:w-[200%] before:rotate-[-90deg] before:animate-rotate before:bg-[conic-gradient(from_0deg,transparent_0_340deg,white_360deg)] before:content-[''] before:[inset:0_auto_auto_50%] before:[translate:-50%_-15%]" />
                             </span>
                             <span className="backdrop absolute inset-[1px] rounded-full bg-background transition-colors duration-200 group-hover:bg-neutral-800" />
-                            <span className="z-10 py-0.5 text-sm text-neutral-100 flex items-center">
+                            {/* <span className="z-10 py-0.5 text-sm text-neutral-100 flex items-center">
                                 <span className="px-2 py-[0.5px] h-[18px] tracking-wide flex items-center justify-center rounded-full bg-gradient-to-r from-sky-400 to-blue-600 text-[9px] font-medium mr-2 text-white">
                                     NEW
                                 </span>
                                 Blogs
-                            </span>
+                            </span> */}
                         </button>
                     </Container>
                     <Container delay={0.15}>
                         <h1 className="text-4xl md:text-4xl lg:text-7xl font-bold text-center !leading-tight max-w-4xl mx-auto">
-                        Find daily jobs effortlessly.  {" "}
+                        Find daily job effortlessly  {" "}
                             <span className="">
                             Boost your earnings, {" "}
                             </span>
@@ -71,7 +71,7 @@ const Hero = () => {
                     </Container>
                     <Container delay={0.25} className="z-20">
                         <div className="flex items-center justify-center mt-6 gap-x-4">
-                            <Link href="#" className="flex items-center gap-2 group">
+                            <Link href="/" className="flex items-center gap-2 group">
                                 <Button size="lg">
                                     Sign Up for Free
                                     <ArrowRightIcon className="size-4 group-hover:translate-x-1 transition-all duration-300" />

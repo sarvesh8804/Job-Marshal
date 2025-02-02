@@ -45,7 +45,7 @@ export async function Navbar() {
                     {/* </div> */}
         <ThemeToggle />
         <Link href="/post-job" className={buttonVariants({ size: "lg" })}>
-          Post Job
+          Explore Jobs
         </Link>
         {session?.user ? (
           <UserDropdown

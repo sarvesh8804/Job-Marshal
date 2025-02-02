@@ -207,7 +207,7 @@ const RouteFinder: React.FC = () => {
     const mapInstance = new window.google.maps.Map(
       document.getElementById("map") as HTMLElement,
       {
-        center: { lat: 12.9716, lng: 77.5946 }, // Default to Bangalore
+        center: { lat: 19.0760, lng: 72.8777 }, // Default to Bangalore
         zoom: 12,
       }
     );
@@ -321,38 +321,72 @@ const RouteFinder: React.FC = () => {
   };
 
   return (
-    <div>
-      <h1>Optimal Cost Multi-Modal Route Finder</h1>
+    <div style={{ maxWidth: "600px", margin: "auto", textAlign: "center", fontFamily: "Arial, sans-serif" }}>
+      <h1 style={{ color: "#333", marginBottom: "20px" }}>Optimal Cost Multi-Modal Route Finder</h1>
 
-      <label htmlFor="source">Enter Source Location (Address/Place):</label>
+      <label htmlFor="source" style={{ fontWeight: "bold" }}>Enter Source Location (Address/Place):</label>
+      <br />
       <input
         type="text"
         id="source"
         placeholder="Enter source location"
         value={source}
         onChange={(e) => setSource(e.target.value)}
+        style={{
+          fontSize: "20px",
+          width: "100%",
+          padding: "10px",
+          margin: "10px 0",
+          borderRadius: "5px",
+          border: "1px solid #ccc",
+        }}
       />
-      <button onClick={useCurrentLocation}>Use My Current Location</button>
+      <br />
+      <button onClick={useCurrentLocation} style={{
+          padding: "10px 15px",
+          backgroundColor: "#007bff",
+          color: "#fff",
+          border: "none",
+          borderRadius: "5px",
+          cursor: "pointer",
+        }}>Use My Current Location</button>
       <br />
       <br />
 
-      <label htmlFor="destination">Enter Destination (Address/Place):</label>
+      <label htmlFor="destination" >Enter Destination (Address/Place):</label>
+      <br />
       <input
         type="text"
         id="destination"
         placeholder="Enter destination place"
         value={destination}
         onChange={(e) => setDestination(e.target.value)}
+        style={{
+          width: "100%",
+          padding: "10px",
+          margin: "10px 0",
+          borderRadius: "5px",
+          border: "1px solid #ccc",
+        }}
       />
       <br />
       <br />
-      <button onClick={getOptimalRoute}>Find Optimal Cost Route</button>
+      <button onClick={getOptimalRoute} style={{
+          padding: "12px 20px",
+          backgroundColor: "#28a745",
+          color: "#fff",
+          border: "none",
+          borderRadius: "5px",
+          cursor: "pointer",
+          fontSize: "16px",
+        }}>Find Optimal Cost</button>
 
-      <div id="map" style={{ height: "500px", width: "100%" }}></div>
+      <div id="map" style={{ height: "400px", width: "600px", marginTop: "20px", borderRadius: "5px", border: "2px solid white", color: "000000"}}></div>
       <div
         id="output"
         dangerouslySetInnerHTML={{ __html: output }}
-        style={{ marginTop: "10px" }}
+        // style={{ marginTop: "10px" }}
+        style={{ marginTop: "20px", padding: "10px", borderRadius: "5px solid white", textAlign: "left", color: "0000000", width: "600px"}}
       />
     </div>
   );

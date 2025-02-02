@@ -11,11 +11,11 @@ const Footer = () => {
                         <div className="flex items-center gap-2">
                             <Icons.icon className="w-auto h-5" />
                             <span className="text-base md:text-lg font-medium text-foreground">
-                                Vetra
+                                JobMarshall
                             </span>
                         </div>
                         <p className="text-muted-foreground mt-4 text-sm text-start">
-                            AI-powered platform that transforms your marketing workflow in seconds.
+                            A job seeking platform for daily-wage workers.
                         </p>
                     </div>
                 </Container>

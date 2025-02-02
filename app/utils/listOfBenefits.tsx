@@ -29,87 +29,87 @@ interface Benefit {
 }
 
 export const benefits: Benefit[] = [
-  { id: "401k", label: "401(k)", icon: <Briefcase className="w-3 h-3" /> },
+  { id: "401k", label: "Daily Wage", icon: <Briefcase className="w-3 h-3" /> },
   {
     id: "distributed",
-    label: "Distributed team",
+    label: "Short-Term Projects",
     icon: <Users className="w-3 h-3" />,
   },
-  { id: "async", label: "Async", icon: <Zap className="w-3 h-3" /> },
+  { id: "async", label: "Seasonal Work", icon: <Zap className="w-3 h-3" /> },
   {
     id: "vision",
-    label: "Vision insurance",
+    label: "Gig Opportunities",
     icon: <Eye className="w-3 h-3" />,
   },
   {
     id: "dental",
-    label: "Dental insurance",
+    label: "Weekend Work",
     icon: <Tooth className="w-3 h-3" />,
   },
   {
     id: "medical",
-    label: "Medical insurance",
+    label: "Night Shifts",
     icon: <Heart className="w-3 h-3" />,
   },
   {
     id: "unlimited_vacation",
-    label: "Unlimited vacation",
+    label: "Temporary Contracts",
     icon: <Umbrella className="w-3 h-3" />,
   },
-  { id: "pto", label: "Paid time off", icon: <Clock className="w-3 h-3" /> },
+  { id: "pto", label: "Apprenticeships", icon: <Clock className="w-3 h-3" /> },
   {
     id: "four_day",
-    label: "4 day workweek",
+    label: "On-Call Work",
     icon: <Calendar className="w-3 h-3" />,
   },
   {
     id: "401k_matching",
-    label: "401k matching",
+    label: "Piece Work",
     icon: <Coins className="w-3 h-3" />,
   },
   {
     id: "company_retreats",
-    label: "Company retreats",
+    label: "Shift Work",
     icon: <Building className="w-3 h-3" />,
   },
   {
     id: "coworking_budget",
-    label: "Coworking budget",
+    label: "Casual Work",
     icon: <Building className="w-3 h-3" />,
   },
   {
     id: "learning_budget",
-    label: "Learning budget",
+    label: "Overtime Work",
     icon: <GraduationCap className="w-3 h-3" />,
   },
   {
     id: "gym",
-    label: "Free gym membership",
+    label: "Weekend Work",
     icon: <Dumbbell className="w-3 h-3" />,
   },
   {
     id: "mental_wellness",
-    label: "Mental wellness budget",
+    label: "Community Projects",
     icon: <Brain className="w-3 h-3" />,
   },
   {
     id: "home_office",
-    label: "Home office budget",
+    label: "Event Support",
     icon: <Home className="w-3 h-3" />,
   },
   {
     id: "crypto",
-    label: "Pay in crypto",
+    label: "Emergency Response",
     icon: <Bitcoin className="w-3 h-3" />,
   },
   {
     id: "pseudonymous",
-    label: "Pseudonymous",
+    label: "Eco-Friendly Work",
     icon: <UserCircle className="w-3 h-3" />,
   },
   {
     id: "profit_sharing",
-    label: "Profit sharing",
+    label: "Urban Renewal",
     icon: <PieChart className="w-3 h-3" />,
   },
   {

@@ -27,7 +27,7 @@ export function JobFilters() {
   const router = useRouter();
   const searchParams = useSearchParams();
 
-  const jobTypes = ["full-time", "part-time", "contract", "internship"];
+  const jobTypes = ["Daily Wage", "Part Time", "Seasonal", "Mass Bidding"];
 
   // Get current filters from URL
   const currentJobTypes = searchParams.get("jobTypes")?.split(",") || [];
